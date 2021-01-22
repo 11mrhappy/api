@@ -1,4 +1,4 @@
-import 'package:api/Repository/EventsRepository.dart';
+import 'package:api/repository/events_repository.dart';
 
 class ConnpassRepository {
   final int resultsReturned;
