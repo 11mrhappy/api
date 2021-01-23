@@ -12,14 +12,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Connpass API App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Connpassイベント検索アプリ'),
@@ -55,10 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
             _searchResult(),
           ],
         ),
-
-
       ),
-
     );
   }
 
@@ -86,11 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ],
-
-
-
     );
-
   }
   void _search() {
     _getRepository(_controller.text).then((repository) {
@@ -131,16 +122,6 @@ class _MyHomePageState extends State<MyHomePage> {
       );
     }
   }
-
-//  Widget _searchResult() {
-//    return ListView(
-//      shrinkWrap: true,
-//      physics: NeverScrollableScrollPhysics(),
-//      children:  _repository.events?.map((event) => ListTile(
-//        title: Text(event.title),
-//      ))?.toList() ?? []
-//    );
-//  }
 
   Widget _searchResult() {
     return ListView.builder(
