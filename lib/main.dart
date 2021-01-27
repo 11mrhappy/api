@@ -10,7 +10,7 @@ void main() {
 }
 
 Future<http.Response> fetchAlbum() {
-  return http.get('https://connpass.com/api/v1/event/200543');
+  return http.get('https://connpass.com/api/v1/event/event_id=200543');
 }
 
 class MyApp extends StatelessWidget {
