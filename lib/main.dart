@@ -18,7 +18,7 @@ class HomePageState extends State<HomePage> {
   List data;
   Future<String> getData() async {
     var response = await http.get(
-      Uri.encodeFull('https://connpass.com/api/v1/event/?eventId=201397'),
+      Uri.encodeFull('https://connpass.com/api/v1/event/?event_id=201397'),
       headers: {
         "Accept": "application/json"
       }
